@@ -6,25 +6,160 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Personal Portfolio Website</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/5b30599645.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
 	<div id="container">
 		<nav>
-			<img src="c:\Users\URVISH MEWADA\Desktop\IMAGES\logo.png" class="logo">
+			<img src="IMAGES/logo.png" class="logo" alt="Logo">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact </a></li>
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
+		<div class="header-text">
+			<p>Front-end Developer</p>
+			<h1>Hi, I'm <span>Urvish</span> Mewada <br>from Ahmedabad</h1>
+		</div>
 	</div>
-
-
 </div>
 
+<!-- About Section -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="IMAGES/user.png" alt="Profile Picture">
+			</div>
+			<div class="about-col-2">
+				<h1 class="subtitle">About Me</h1><br>
+				<p>Motivated and hardworking fresher with a good understanding of front-end web development.
+				Skilled in HTML, CSS, and JavaScript. Have built small projects that show my ability to
+				create clean, user-friendly websites. I enjoy learning new things and solving problems through 
+				code. Looking for a front-end developer role where I can grow my skills and contribute to real-world
+				projects.</p>
 
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="openTab(event, 'skills')">Skills</p>
+					<p class="tab-links" onclick="openTab(event, 'experience')">Experience</p>
+					<p class="tab-links" onclick="openTab(event, 'education')">Education</p>
+				</div>
+
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>HTML</span><br>brFor building website structure.</li>
+						<li><span>CSS</span><br>For styling and layouts.</li>
+						<li><span>JavaScript</span><br>For adding interactivity to websites.</li>
+						<li><span>Bootstrap</span><br>For making responsive designs.</li>
+						<li><span>Basic SEO</span><br>For making websites search engine friendly.</li>
+						<li><span>Team Work</span><br>Able to work well with others.</li>
+						<li><span>Problem Solving</span><br>Enjoy fixing issues with code.</li>
+					</ul>
+				</div>
+
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li><span>2024 - Current</span><br>P.T. Teacher at Shree Swaminarayan Gurukul International School</li>
+						<li><span>May 2024 - June 2025</span><br>Intern as a Front-end Developer Fresher</li>
+					</ul>
+				</div>
+
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2019</span><br>SSC from Shri R.J.Patel Shreeji Vidyalaya</li>
+						<li><span>2021</span><br>HSC from Shri R.J.Patel Shreeji Vidyalaya</li>
+						<li><span>2024</span><br>BCA graduate from C.U. Shah Institute of Computer Application</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Services -->
+ <div id="services">
+	<div class="container">
+		<h1 class="subtitle">My Services</h1><br>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>Web design</h2>
+				<p>Designing websites that work seamlessly across desktops, tablets, and mobile devices using modern layout techniques.
+					Building stylish and professional portfolio websites for individuals, freelancers, or students.
+					Basic WordPress Setup, Website Maintenance, Speed Optimization, Design Consultation</p>
+					<a href="#">Learn More</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-file"></i> 
+				<h2>Front-end design</h2>
+				<p>Designing websites that work seamlessly across desktops, tablets, and mobile devices using modern layout techniques.
+					Building stylish and professional portfolio websites for individuals, freelancers, or students.
+					Basic WordPress Setup, Website Maintenance, Speed Optimization, Design Consultation</p>
+					<a href="#">Learn More</a>
+			</div>
+			<div>
+				<i class="fa-brands fa-app-store-ios"></i>
+				<h2>App design</h2>
+				<p>Designing websites that work seamlessly across desktops, tablets, and mobile devices using modern layout techniques.
+					Building stylish and professional portfolio websites for individuals, freelancers, or students.
+					Basic WordPress Setup, Website Maintenance, Speed Optimization, Design Consultation</p>
+					<a href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+ </div>
+
+<!-- Contact us -->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="subtitle">Contact Me</h1>
+				<p><i class="fa-solid fa-paper-plane"></i>uevishmewada5142@gmail.com</p>
+				<p><i class="fa-solid fa-phone-volume"></i>+91 8320237323</p>
+				<div class="socialicons"><br>
+					<a href=""><i class="fa-brands fa-facebook"></i></a>
+					<a href=""><i class="fa-brands fa-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-linkedin"></i></a>
+				</div><br><br>
+				<a href="IMAGES/my resume.pdf" download class="button button-download">Download My CV</a>
+
+			</div>
+			<div class="contact-right">
+				<form>
+					<input type="text" name="Name" placeholder="Enter Your Name" required>
+					<input type="mobilenumber" name="mobilenumber" placeholder="Enter Your Mobilenumber" required>
+					<input type="email" name="email" placeholder="Enter Your Email" required>
+					<textarea name="Message" rows="8" placeholder="Enter Your Message"></textarea>
+					<button class="button button-submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright © Urvish Mewada</p>
+	</div>
+</div>
+
+<!-- JavaScript -->
+<script>
+	function openTab(event, tabName) {
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+
+		for (let i = 0; i < tablinks.length; i++) {
+			tablinks[i].classList.remove("active-link");
+		}
+		for (let i = 0; i < tabcontents.length; i++) {
+			tabcontents[i].classList.remove("active-tab");
+		}
+
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabName).classList.add("active-tab");
+	}
+</script>
 
 </body>
 </html>
