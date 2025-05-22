@@ -67,7 +67,7 @@ nav ul li a:hover::after{
 }
 /* about section */
 #about{
-	padding: 80px 0;
+	padding: 80px 30px 10px 30px;
 	color: #ababab;
 }
 .row{
@@ -137,7 +137,7 @@ nav ul li a:hover::after{
 /* services */
 
 #services{
-	padding: 30px 0;
+	padding: 30px 30px 10px 30px;
 }
 
 .services-list{
@@ -181,9 +181,11 @@ nav ul li a:hover::after{
 
 .contact-left{
 	flex-basis: 35%;
+	padding: 40px 30px 40px;
 }
 .contact-right{
 	flex-basis: 60%;
+	padding: 40px 30px 40px;
 }
 
 .contact-left p{
